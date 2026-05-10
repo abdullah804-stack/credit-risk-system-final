@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Risk Predictor</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Credit Risk Predictor</h1>
+        <p class="subtitle">
+            AI-powered loan default risk analysis
+        </p>
+
+        <form id="loanForm">
+
+            <div class="input-group">
+                <label>Loan Amount</label>
+                <input type="number" id="loan_amnt" placeholder="e.g. 35000" required>
+            </div>
+
+            <div class="input-group">
+                <label>Interest Rate (%)</label>
+                <input type="number" id="int_rate" placeholder="e.g. 24" required>
+            </div>
+
+            <div class="input-group">
+                <label>Installment</label>
+                <input type="number" id="installment" placeholder="e.g. 1000" required>
+            </div>
+
+            <div class="input-group">
+                <label>Annual Income</label>
+                <input type="number" id="annual_inc" placeholder="e.g. 30000" required>
+            </div>
+
+            <div class="input-group">
+                <label>Debt To Income Ratio</label>
+                <input type="number" id="dti" placeholder="e.g. 38" required>
+            </div>
+
+            <div class="input-group">
+                <label>Loan Term</label>
+                <select id="term">
+                    <option value="36 months">36 months</option>
+                    <option value="60 months">60 months</option>
+                </select>
+            </div>
+
+            <button type="submit" id="predictBtn">
+                Predict Risk
+            </button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
