@@ -4,7 +4,7 @@
 *.parquet
 data/raw/
 data/processed/
-*.pkl
+
 *.joblib
 __pycache__/
 *.pyc
